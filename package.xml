@@ -3,12 +3,16 @@
 <package format="3">
   <name>fwsfwd_dxl_wb</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Node for controlling Dynamixel motors for 4WIS4WID mobile robot.</description>
   <maintainer email="branimir.caran@gmail.com">branimir</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
