@@ -9,10 +9,11 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(dynamixel_workbench_toolbox REQUIRED)
 
 add_executable(fwsfwd_controller src/fwsfwd_controller.cpp)
-ament_target_dependencies(fwsfwd_controller rclcpp std_msgs geometry_msgs dynamixel_workbench_toolbox)
+ament_target_dependencies(fwsfwd_controller rclcpp std_msgs geometry_msgs sensor_msgs dynamixel_workbench_toolbox)
 
 install(TARGETS
   fwsfwd_controller
